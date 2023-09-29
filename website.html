@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dela+Gothic+One"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TRISTAN'S PORTFOLIO</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about" class="about">
+      <img src="img/tristan cakep.jpg" alt="" />
+      <div>
+        <blockquote>
+          <strong
+            >"THOSE WHO CLIMB THE LADDER, MUST START AT THE BOTTOM"</strong
+          >
+        </blockquote>
+        <p>
+          I am currently a college student majoring in computer science at The
+          University of Gadjah Mada in the International Undergraduate Program.
+          I have an interest in web development, hence this website that I've
+          built. As for my strengths, I am very good at adapting to new
+          environments. For weaknesses, I guess you could say I'm a
+          perfectionist, hoho
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>PROJECTS</h2>
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="img/c++ image aest.webp" alt="Project 1" />
+        </div>
+        <div class="slide">
+          <img src="img/UI_of_Godot_Game_Engine.jpg" alt="Project 2" />
+        </div>
+        <div class="slide">
+          <img src="img/html.png" alt="Project 3" />
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>CONTACT</h2>
+      <div class="contact-form">
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <div>
+          <div class="social-buttons">
+            <a
+              href="https://www.twitter.com/greyalters"
+              target="_blank"
+              class="social-button twitter"
+            >
+              <span class="social-icon"
+                ><img src="img/x logo.png" alt="Twitter"
+              /></span>
+              Twitter
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yourprofile"
+              target="_blank"
+              class="social-button linkedin"
+            >
+              <span class="social-icon"
+                ><img src="img/linkedin logo.png" alt="LinkedIn"
+              /></span>
+              LinkedIn
+            </a>
+            <a
+              href="https://www.instagram.com/greyalters"
+              target="_blank"
+              class="social-button instagram"
+            >
+              <span class="social-icon"
+                ><img src="img/insta logo.webp" alt="Instagram"
+              /></span>
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

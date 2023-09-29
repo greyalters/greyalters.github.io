@@ -1,0 +1,229 @@
+/* Reset some default styles */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Style sections */
+section {
+    padding: 40px;
+}
+
+/* Style the slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.slide {
+    display: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Style the "About Me" section */
+#about {
+    display: grid;
+    background-color: #f5f5f5;
+    padding: 40px;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.about img{
+    width: 150px;
+    display: inline;
+    float: left;
+}
+
+blockquote {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right;
+}
+
+#about strong {
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* ---- */
+
+#projects h2 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.slideshow-container {
+    display: flex;
+    flex-direction: column; /* Stack the slideshow vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Styles for the slides and navigation buttons */
+.slide {
+    text-align: center; /* Center the content within each slide */
+}
+
+.slide img {
+    max-width: 100%; /* Ensure images don't exceed the container width */
+    max-height: 300px; /* Set a maximum height for the images */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* ---- */
+
+#contact h2 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contact {
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Styles for social media buttons */
+.social-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.social-button {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 0; /* Hide text inside the button */
+    border: none;
+    cursor: pointer;
+    width: 50px; /* Set the width and height to create a circular button */
+    height: 50px;
+    border-radius: 50%; /* Make the button circular */
+    background: none; /* Remove default background */
+    overflow: hidden; /* Ensure the icon size is consistent */
+}
+
+.social-button:hover {
+    transform: scale(1.05); /* Add hover effect to the icons */
+}
+
+.social-icon img {
+    width: 100%; /* Make the image fill the button container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+.facebook {
+    background-color: #1877f2;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #bc2a8d;
+}
